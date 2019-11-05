@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-29 09:18:36 AM"/>
+        <attribute name="created" value="UmFtcztERVNLVE9QLU9FMzJIMEQ7MjAxOS0xMC0yOTswOToxMDowOSBBTTsyNjk1"/>
+        <attribute name="edited" value="UmFtcztERVNLVE9QLU9FMzJIMEQ7MjAxOS0xMC0yOTswOToxODozNiBBTTsxOzI4MTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Welcome, let's add two numbers!&quot;" newline="True"/>
+            <declare name="Num1" type="Integer" array="False" size=""/>
+            <declare name="Num2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter the 1st number.&quot;" newline="True"/>
+            <input variable="Num1"/>
+            <output expression="&quot;Please enter the 2nd number&quot;" newline="True"/>
+            <input variable="Num2"/>
+            <output expression="&quot;The sum of the two numbers is &quot;" newline="False"/>
+            <declare name="Sum" type="Integer" array="False" size=""/>
+            <assign variable="Sum" expression="Num1 + Num2"/>
+            <output expression="Sum" newline="True"/>
+            <output expression="&quot;Well done!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
