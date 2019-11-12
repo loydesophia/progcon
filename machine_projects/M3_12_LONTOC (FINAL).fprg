@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-11 05:52:00 PM"/>
+        <attribute name="created" value="UmFtcztMQUIzMTRDMzQ7MjAxOS0xMS0xMTswNTo0MTowNCBQTTsyMjA2"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMzQ7MjAxOS0xMS0xMTswNTo1MjowMCBQTTsyOzIzMTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Welcome, I'm a program that can idenfity if the number is ODD or EVEN!&quot;" newline="True"/>
+            <output expression="&quot;Please insert any number.&quot;" newline="True"/>
+            <declare name="Number" type="Integer" array="False" size=""/>
+            <input variable="Number"/>
+            <if expression="Number%2==0">
+                <then>
+                    <output expression="&quot;The number is even &quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;The number is odd &quot;" newline="True"/>
+                </else>
+            </if>
+            <output expression="&quot;Would you like to input another number?&quot;" newline="True"/>
+            <output expression="&quot;Write 'Yes' or 'No'&quot;" newline="True"/>
+            <declare name="Yes" type="Integer" array="False" size=""/>
+            <declare name="No" type="Integer" array="False" size=""/>
+            <declare name="Answer" type="String" array="False" size=""/>
+            <input variable="Answer"/>
+            <if expression="Answer==&quot;Yes&quot;">
+                <then>
+                    <call expression="Main"/>
+                    <breakpoint/>
+                </then>
+                <else>
+                    <output expression="&quot;Thank you so much! I'm glad that I helped you.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
