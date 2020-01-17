@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="EDWIN LONTOC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-18 01:30:32 AM"/>
+        <attribute name="created" value="RURXSU4gTE9OVE9DO0VEV0lOTE9OVE9DLVBDOzIwMTktMTItMjI7MDE6MjI6NTcgUE07MzE4MA=="/>
+        <attribute name="edited" value="RURXSU4gTE9OVE9DO0VEV0lOTE9OVE9DLVBDOzIwMTktMTItMjI7MDE6MzI6MDggUE07MTszMjg1"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTY7MjAyMC0wMS0xODswMTozMDozMiBBTTsxNzsyMzQ3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Hi! We are the 'Young Programmers'. This program can convert feet into inches.&quot;" newline="True"/>
+            <output expression="&quot;This is made by Lontoc, Sophia Loyde,Candelaria, Francesca Gail and Roy, Erron John.&quot;" newline="True"/>
+            <declare name="Inches" type="Integer" array="False" size=""/>
+            <declare name="Feet" type="Integer" array="False" size=""/>
+            <declare name="Answer" type="String" array="False" size=""/>
+            <output expression="&quot;Please input the value in feet&quot;" newline="True"/>
+            <input variable="Feet"/>
+            <assign variable="Inches" expression="Feet*12"/>
+            <output expression="Inches &amp; &quot; inches is the answer.&quot;" newline="True"/>
+            <output expression="&quot;Would you like to convert again?&quot;" newline="True"/>
+            <output expression="&quot;Type 'Yes' or 'No'&quot;" newline="True"/>
+            <declare name="Yes" type="Integer" array="False" size=""/>
+            <declare name="No" type="Integer" array="False" size=""/>
+            <input variable="Answer"/>
+            <if expression="Answer = &quot;Yes&quot;">
+                <then>
+                    <call expression="Main"/>
+                </then>
+                <else>
+                    <output expression="&quot;I'm glad that I helped you. Thank you!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

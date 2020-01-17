@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-18 01:31:15 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMTRDMTY7MjAyMC0wMS0xMTswMTo1NjowMiBBTTsyMTgy"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTY7MjAyMC0wMS0xODswMTozMToxNSBBTTsxODsyMzUw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Hi! We are the 'Young Programmers'. And this is our little program that can add a number until -999!&quot;" newline="True"/>
+            <output expression="&quot;This is made by Lontoc, Sophia Loyde,Candelaria, Francesca Gail and Roy, Erron John.&quot;" newline="True"/>
+            <declare name="Total" type="Real" array="False" size=""/>
+            <declare name="Number1" type="Real" array="False" size=""/>
+            <declare name="Number2" type="Real" array="False" size=""/>
+            <declare name="ExitCode" type="Boolean" array="False" size=""/>
+            <declare name="Answer" type="String" array="False" size=""/>
+            <assign variable="ExitCode" expression="True"/>
+            <assign variable="Total" expression="0"/>
+            <while expression="ExitCode == True">
+                <output expression="&quot;Please insert the first number.&quot;" newline="True"/>
+                <input variable="Number1"/>
+                <output expression="&quot;Please insert the second number.&quot;" newline="True"/>
+                <input variable="Number2"/>
+                <if expression="Number2 &gt;= -999">
+                    <then>
+                        <assign variable="Total" expression="Number1 + Number2"/>
+                        <output expression="&quot;The total is &quot; &amp; Total" newline="True"/>
+                        <output expression="&quot;Would you like to try again?&quot;" newline="True"/>
+                        <output expression="&quot;Input 'Yes' or 'No' only.&quot;" newline="True"/>
+                        <input variable="Answer"/>
+                        <if expression="Answer = &quot;Yes&quot;">
+                            <then>
+                                <output expression="&quot;Nice!&quot;" newline="True"/>
+                                <call expression="Main"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Thank you. Glad I helped.&quot;" newline="True"/>
+                            </else>
+                        </if>
+                        <breakpoint/>
+                    </then>
+                    <else>
+                        <if expression="Number1 = -999">
+                            <then>
+                                <assign variable="Total" expression="Number2 + Number1"/>
+                                <output expression="&quot;The total is &quot; &amp; Total" newline="True"/>
+                                <output expression="&quot;Would you like to try again?&quot;" newline="True"/>
+                                <output expression="&quot;Input 'Yes' or 'No' only.&quot;" newline="True"/>
+                                <input variable="Answer"/>
+                                <if expression="Answer = &quot;Yes&quot;">
+                                    <then>
+                                        <output expression="&quot;Yey!&quot;" newline="True"/>
+                                        <call expression="Main"/>
+                                    </then>
+                                    <else>
+                                        <output expression="&quot;Thank you!&quot;" newline="True"/>
+                                    </else>
+                                </if>
+                                <breakpoint/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Invalid data.&quot;" newline="True"/>
+                                <breakpoint/>
+                            </else>
+                        </if>
+                        <breakpoint/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

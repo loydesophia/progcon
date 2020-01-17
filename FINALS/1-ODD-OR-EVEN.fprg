@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="EDWIN LONTOC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-18 01:30:23 AM"/>
+        <attribute name="created" value="RURXSU4gTE9OVE9DO0VEV0lOTE9OVE9DLVBDOzIwMTktMTItMjI7MTI6Mzk6NDAgUE07MzE4Mg=="/>
+        <attribute name="edited" value="RURXSU4gTE9OVE9DO0VEV0lOTE9OVE9DLVBDOzIwMTktMTItMjI7MTI6NTE6MDcgUE07MTszMjg3"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTY7MjAyMC0wMS0xODswMTozMDoyMyBBTTs5OzIzMDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Hi! We are the 'Young Programmers'. This is a program that can determine if the number is odd or even.&quot;" newline="True"/>
+            <output expression="&quot;This is made by Lontoc, Sophia Loyde,Candelaria, Francesca Gail and Roy, Erron John.&quot;" newline="True"/>
+            <output expression="&quot;Please input a number.&quot;" newline="True"/>
+            <declare name="OddNumber" type="Real" array="False" size=""/>
+            <declare name="EvenNumber" type="Real" array="False" size=""/>
+            <declare name="Number" type="Integer" array="False" size=""/>
+            <declare name="Answer" type="String" array="False" size=""/>
+            <input variable="Number"/>
+            <if expression="Number % 2 == 0">
+                <then>
+                    <output expression="Number &amp; &quot; is an even number.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="Number &amp; &quot; is an odd number.&quot;" newline="True"/>
+                </else>
+            </if>
+            <output expression="&quot;Would you like to try again?&quot;" newline="True"/>
+            <output expression="&quot;Type 'Yes' if you want to continue.&quot;" newline="True"/>
+            <output expression="&quot;Type 'No' if you want to stop.&quot;" newline="True"/>
+            <declare name="Yes" type="Integer" array="False" size=""/>
+            <declare name="No" type="Integer" array="False" size=""/>
+            <input variable="Answer"/>
+            <if expression="Answer = &quot;Yes&quot;">
+                <then>
+                    <call expression="Main"/>
+                </then>
+                <else>
+                    <output expression="&quot;Thank you.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

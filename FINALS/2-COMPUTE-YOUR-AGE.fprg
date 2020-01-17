@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="EDWIN LONTOC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-18 01:34:26 AM"/>
+        <attribute name="created" value="RURXSU4gTE9OVE9DO0VEV0lOTE9OVE9DLVBDOzIwMTktMTItMjI7MDE6NTA6MjkgUE07MzE4MA=="/>
+        <attribute name="edited" value="RURXSU4gTE9OVE9DO0VEV0lOTE9OVE9DLVBDOzIwMTktMTItMjI7MDI6Mzg6MDEgUE07NzszMjkx"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTY7MjAyMC0wMS0xODswMTozNDoyNiBBTTsyMjsyMzUw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Hi! We are the 'Young Programmers'. And this program can compute your age in just a snap!&quot;" newline="True"/>
+            <output expression="&quot;This is made by Lontoc, Sophia Loyde, &quot;" newline="False"/>
+            <output expression="&quot;Candelaria, Francesca Gail and Roy, Erron John.&quot;" newline="True"/>
+            <declare name="BirthMonth" type="Integer" array="False" size=""/>
+            <declare name="BirthDate" type="Integer" array="False" size=""/>
+            <declare name="BirthYear" type="Integer" array="False" size=""/>
+            <declare name="CurrentMonth" type="Integer" array="False" size=""/>
+            <declare name="CurrentDate" type="Integer" array="False" size=""/>
+            <declare name="CurrentYear" type="Integer" array="False" size=""/>
+            <declare name="AgeMonth" type="Integer" array="False" size=""/>
+            <declare name="AgeDate" type="Integer" array="False" size=""/>
+            <declare name="AgeYear" type="Integer" array="False" size=""/>
+            <declare name="Answer" type="String" array="False" size=""/>
+            <output expression="&quot;Please input the current year.&quot;" newline="True"/>
+            <input variable="CurrentYear"/>
+            <output expression="&quot;Thanks. Now, please input your birth year.&quot;" newline="True"/>
+            <input variable="BirthYear"/>
+            <assign variable="AgeYear" expression="CurrentYear - BirthYear"/>
+            <output expression="&quot;Next. Please input the current date.&quot;" newline="True"/>
+            <input variable="CurrentDate"/>
+            <output expression="&quot;Please input your birth date.&quot;" newline="True"/>
+            <input variable="BirthDate"/>
+            <assign variable="AgeDate" expression="CurrentDate - BirthDate"/>
+            <output expression="&quot;For the last step, please input the current month according to their number. Example: January - 01.&quot;" newline="True"/>
+            <input variable="CurrentMonth"/>
+            <output expression="&quot;Next is your birth month.&quot;" newline="True"/>
+            <input variable="BirthMonth"/>
+            <assign variable="AgeMonth" expression="CurrentMonth - BirthMonth"/>
+            <output expression="&quot;You are &quot;" newline="False"/>
+            <output expression="AgeYear &amp; &quot; years, &quot;" newline="False"/>
+            <output expression="AgeMonth &amp; &quot; months and &quot;" newline="False"/>
+            <output expression="AgeDate &amp; &quot; days old.&quot;" newline="True"/>
+            <output expression="&quot;Would you like to try another birthday?&quot;" newline="True"/>
+            <declare name="Yes" type="Integer" array="False" size=""/>
+            <declare name="No" type="Integer" array="False" size=""/>
+            <input variable="Answer"/>
+            <if expression="Answer = &quot;Yes&quot;">
+                <then>
+                    <call expression="Main"/>
+                </then>
+                <else>
+                    <output expression="&quot;Thank you!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

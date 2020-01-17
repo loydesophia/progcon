@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-18 01:31:45 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMTRDMTY7MjAyMC0wMS0xODswMTowMToyMiBBTTsyMTgx"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTY7MjAyMC0wMS0xODswMTozMTo0NSBBTTsyMDsyMzQ2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Hi! I'm a program of Young Programmers that can compute the average and can identify the largest and the smallest number.&quot;" newline="True"/>
+            <output expression="&quot;This is made by Lontoc, Sophia Loyde,Candelaria, Francesca Gail and Roy, Erron John.&quot;" newline="True"/>
+            <declare name="Average" type="Integer" array="False" size=""/>
+            <declare name="FinalAverage" type="Integer" array="False" size=""/>
+            <declare name="A" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="H" type="Integer" array="False" size=""/>
+            <declare name="Answer" type="String" array="False" size=""/>
+            <declare name="Array" type="Integer" array="True" size="10"/>
+            <assign variable="H" expression="0"/>
+            <assign variable="Average" expression="0"/>
+            <assign variable="FinalAverage" expression="0"/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;Please input a number.&quot;" newline="True"/>
+                <input variable="Array[i]"/>
+            </for>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <assign variable="Average" expression="Average + Array[i]"/>
+            </for>
+            <output expression="&quot;The average is &quot; &amp; average / 10" newline="True"/>
+            <for variable="a" start="0" end="9" direction="inc" step="1">
+                <for variable="i" start="0" end="8" direction="inc" step="1">
+                    <if expression="Array[i] &lt; Array[i+1]">
+                        <then>
+                            <assign variable="H" expression="Array[i]"/>
+                            <assign variable="Array[i]" expression="Array[i+1]"/>
+                            <assign variable="Array[i+1]" expression="H"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <output expression="&quot;The largest number is &quot; &amp; Array[0]" newline="True"/>
+            <output expression="&quot;The smallest number is &quot; &amp; Array[9]" newline="True"/>
+            <output expression="&quot;Phew! That was easy!&quot;" newline="True"/>
+            <output expression="&quot;Do you want  to try again?&quot;" newline="True"/>
+            <output expression="&quot;Please input 'Yes' or 'No' only.&quot;" newline="True"/>
+            <input variable="Answer"/>
+            <if expression="Answer = &quot;Yes&quot;">
+                <then>
+                    <output expression="&quot;Yay! I'm so excited.&quot;" newline="True"/>
+                    <call expression="Main"/>
+                </then>
+                <else>
+                    <output expression="&quot;Thank you! I'm glad I helped.&quot;" newline="True"/>
+                    <breakpoint/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ERRON"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-18 01:31:37 AM"/>
+        <attribute name="created" value="RVJST047TEFQVE9QLTZSRzdBTkhBOzIwMTktMTItMjc7MDE6MjY6MjQgUE07MjcyNA=="/>
+        <attribute name="edited" value="RVJST047TEFQVE9QLTZSRzdBTkhBOzIwMTktMTItMjc7MDE6NDI6NTYgUE07MTsyODM1"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTY7MjAyMC0wMS0xODswMTozMTozNyBBTTsyMjsyMzQ5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1" type="Real" array="False" size=""/>
+            <declare name="num2" type="Real" array="False" size=""/>
+            <declare name="ans" type="Real" array="False" size=""/>
+            <declare name="Answer" type="String" array="False" size=""/>
+            <output expression="&quot;Hi! We are the 'Young Programmers'. And this is our little program. that can divide two given values in just a snap.&quot;" newline="True"/>
+            <output expression="&quot;This is made by Lontoc, Sophia Loyde,Candelaria, Francesca Gail and Roy, Erron John.&quot;" newline="True"/>
+            <output expression="&quot;Please enter your first number&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;now, your second number&quot;" newline="True"/>
+            <input variable="num2"/>
+            <assign variable="ans" expression="num1 / num2"/>
+            <output expression="&quot;the answer is &quot; &amp; ans" newline="True"/>
+            <output expression="&quot;Would you like to try again?&quot;" newline="True"/>
+            <output expression="&quot;Type 'Yes' or 'No'&quot;" newline="True"/>
+            <input variable="Answer"/>
+            <if expression="Answer = &quot;Yes&quot;">
+                <then>
+                    <call expression="Main"/>
+                </then>
+                <else>
+                    <output expression="&quot;Thank you&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

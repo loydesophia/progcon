@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-18 01:30:55 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMTRDMTY7MjAyMC0wMS0wODswMTo0MDo0OSBBTTsyMTky"/>
+        <attribute name="edited" value="UmFtcztMQUIzMTRDMTY7MjAyMC0wMS0xODswMTozMDo1NSBBTTsxMjsyMzQ3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="OriginalPrice" type="Real" array="False" size=""/>
+            <declare name="DiscountRate" type="Real" array="False" size=""/>
+            <declare name="Discount" type="Real" array="False" size=""/>
+            <declare name="DiscountPrice" type="Real" array="False" size=""/>
+            <declare name="Answer" type="String" array="False" size=""/>
+            <declare name="ExitCode" type="Boolean" array="False" size=""/>
+            <assign variable="ExitCode" expression="True"/>
+            <while expression="ExitCode == True">
+                <output expression="&quot;Hi! We are the 'Young Programmers'. This program can calculate the discounted price of your product!&quot;" newline="True"/>
+                <output expression="&quot;This is made by Lontoc, Sophia Loyde,Candelaria, Francesca Gail and Roy, Erron John.&quot;" newline="True"/>
+                <output expression="&quot;Please input the original price.&quot;" newline="True"/>
+                <input variable="OriginalPrice"/>
+                <output expression="&quot;Nice, please input the discount in decimal. Example: 10% is .10&quot;" newline="True"/>
+                <input variable="DiscountRate"/>
+                <assign variable="Discount" expression="OriginalPrice * DiscountRate"/>
+                <assign variable="DiscountPrice" expression="OriginalPrice - Discount"/>
+                <output expression="&quot;The discounted price of your desired product is &quot; &amp; DiscountPrice" newline="True"/>
+                <output expression="&quot;Would like to try again?&quot;" newline="True"/>
+                <output expression="&quot;Type 'Yes' or 'No'&quot;" newline="True"/>
+                <input variable="Answer"/>
+                <if expression="Answer = &quot;Yes&quot;">
+                    <then>
+                        <call expression="Main"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Thank you!&quot;" newline="True"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
